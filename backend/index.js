@@ -26,7 +26,7 @@ app.get('/',(req,res)=>{
 
 app.use('/books',booksRoute)
 
-mongoose.connect("mongodb+srv://user:EQ8W19863ZPkKK2L@cluster.fecqgpc.mongodb.net/mern")
+mongoose.connect("mongodb+srv://user:EQ8W19863ZPkKK2L@cluster.fecqgpc.mongodb.net/books")
 .then(() =>{
     console.log('Connected to the database')
     app.listen(5555,()=>{
